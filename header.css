@@ -1,0 +1,448 @@
+
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    gap: 10px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/** left-section style **/
+.nav-left {
+    display: flex;
+    height: 60px;
+    gap: 6px;
+    width: 220px;
+    margin-top: 18px;
+}
+
+.amazon-logo {
+    width: 120px;
+    height: 50px;
+    padding: 9px 8px 10px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.amazon-logo:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 9px 10px 10px 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    width: 88px;
+    line-height: 0.9;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.delivery:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.delivery-line1 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 20px;
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+    width: 100px;
+    margin-bottom: 1px;
+}
+
+.delivery-line2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-solid.fa-location-dot {
+    margin-right: 1px;
+}
+
+/** center-section style **/
+.nav-center {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.5px solid #131921;
+    width: 718px;
+    margin-right: -11px;
+    margin-left: -1px;
+}
+
+.border-selector {
+    background-color: #e5e6e6;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.border-selector:hover {
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+}
+
+.selector {
+    padding: 14px 6px;
+    background-color: #e7e2e2;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    border: none;
+    height: 40px;
+    border-left: 0.1px solid #c5c5c5;
+    font-size: 15px;
+    padding-left: 6px;
+    max-width: 750px;
+    cursor: pointer;
+    min-width: 30px;
+}
+
+
+.search-button {
+    background-color: rgb(252, 185, 61);
+    height: 40px;
+    border: none;
+    padding: 1px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+/** right-section style **/
+.nav-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+
+    
+}
+
+.lang {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -4px;
+    color: white;
+}
+
+.flag-icon {
+    display: flex;
+    margin-right: 30px;
+}
+
+.flag-icon, .flag-image {
+    width: 20px;
+    height: 14px;
+    margin-bottom: -12px;
+    margin-left: 8px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    width: 132px;
+    margin-left: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.account-info:hover, .cart-info:hover, .orders-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.account-line1 {
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+}
+
+.account-line2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.orders-info {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    width: 80px;
+    height: 50px;
+    justify-content: center;
+    padding-left: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.orders-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.orders-line1 {
+    font-size: 12px;
+    color: white;
+    margin-left: 0;
+    line-height: 1.1;
+}
+
+.orders-line2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-left: 0;
+    line-height: 1.1;
+}
+
+.cart-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 50px;
+    padding: 0 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -10px;
+}
+
+.cart-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.fa-solid.fa-cart-shopping.cart-icon {
+    font-size: 25px;
+}
+
+.cart-line2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+
+/** Nav-shopc -----------------------------------------------------**/
+.nav-shop {
+  display: flex;
+  flex: 1;
+  height: 39px;
+  background-color: rgb(35, 47, 62);
+  gap: 0px;
+  color: white;
+  font-size: 14px;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-left: -2px;
+}
+
+/* Base menu buttons */
+.menu-1, .menu-2, .menu-3, .menu-4, .menu-5, .menu-6, .menu-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  border: none;
+}
+
+/* Hover effect: clean inner white border (no movement) */
+.menu-1:hover,
+.menu-2:hover,
+.menu-3:hover,
+.menu-4:hover,
+.menu-5:hover,
+.menu-6:hover,
+.menu-7:hover {
+  box-shadow: inset 0 0 0 1px white;
+  background-color: rgba(255,255,255,0.08); /* subtle light overlay */
+}
+
+/* Icon and text spacing */
+.menu-1 i {
+  margin-right: 3px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+
+/** Hero-Section-------------------------------------------------- **/
+
+.hero-section {
+  background-image: url(https://m.media-amazon.com/images/I/61BKVkj5+uL._SX3000_.jpg);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+  background-repeat: repeat-x; /* allows continuous horizontal movement */
+  animation: moveLeft 30s linear infinite;
+}
+
+/* background animation */
+@keyframes moveLeft {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2000px 0; /* move left */
+  }
+}
+
+.banner-message {
+  position: absolute;
+  top: 70%; /* moves it down */
+  left: 1.5%; /* centers horizontally */
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 97%;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Make the link blue like Amazon */
+.banner-message a {
+  color: #0073e6;
+}
+
+.banner-message a:hover {
+  text-decoration: underline;
+}
+
+/** cards **/
+.shop-container {
+    position: absolute;
+    top: 79%;
+    left: 1.5%;
+    width: 97%;
+}
+
+
+/** shop-card **/
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(306px, 1fr));
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.shop-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 306px;
+    padding: 23px 20px;
+    border-radius: 8px; /* smooth corners */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shop-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 28px;
+    column-gap: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.category-box img {
+    width: 100%;
+    height: 102px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.category-box p {
+    font-size: 12px;
+}
+
+.title p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 13px;
+    color: #0073e6;
+    margin-top: 45px;
+}
+
+.hero-section {
+  height: 900px; /* increase from 600px to make it taller */
+}
+
+/**--------------------------------------**/
+

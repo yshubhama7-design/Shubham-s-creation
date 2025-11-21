@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style-amazon/header.css">
+    <link rel="stylesheet" href="style-amazon/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /**
+* {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    gap: 10px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    height: 60px;
+    gap: 6px;
+    width: 220px;
+    margin-top: 18px;
+}
+
+.amazon-logo {
+    width: 120px;
+    height: 50px;
+    padding: 9px 8px 10px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.amazon-logo:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 9px 10px 10px 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    width: 88px;
+    line-height: 0.9;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.delivery:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.delivery-line1 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 20px;
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+    width: 100px;
+    margin-bottom: 1px;
+}
+
+.delivery-line2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-solid.fa-location-dot {
+    margin-right: 1px;
+}
+
+.nav-center {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.5px solid #131921;
+    width: 718px;
+    margin-right: -11px;
+    margin-left: -1px;
+}
+
+.border-selector {
+    background-color: #e5e6e6;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.border-selector:hover {
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+}
+
+.selector {
+    padding: 14px 6px;
+    background-color: #e7e2e2;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    border: none;
+    height: 40px;
+    border-left: 0.1px solid #c5c5c5;
+    font-size: 15px;
+    padding-left: 6px;
+    max-width: 750px;
+    cursor: pointer;
+    min-width: 30px;
+}
+
+
+.search-button {
+    background-color: rgb(252, 185, 61);
+    height: 40px;
+    border: none;
+    padding: 1px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+
+    
+}
+
+.lang {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -4px;
+    color: white;
+}
+
+.flag-icon {
+    display: flex;
+    margin-right: 30px;
+}
+
+.flag-icon, .flag-image {
+    width: 20px;
+    height: 14px;
+    margin-bottom: -12px;
+    margin-left: 8px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    width: 132px;
+    margin-left: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.account-info:hover, .cart-info:hover, .orders-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.account-line1 {
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+}
+
+.account-line2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.orders-info {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    width: 80px;
+    height: 50px;
+    justify-content: center;
+    padding-left: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.orders-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.orders-line1 {
+    font-size: 12px;
+    color: white;
+    margin-left: 0;
+    line-height: 1.1;
+}
+
+.orders-line2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-left: 0;
+    line-height: 1.1;
+}
+
+.cart-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 50px;
+    padding: 0 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -10px;
+}
+
+.cart-info:hover {
+    box-shadow: inset 0 0 0 1px white;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.fa-solid.fa-cart-shopping.cart-icon {
+    font-size: 25px;
+}
+
+.cart-line2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.nav-shop {
+  display: flex;
+  flex: 1;
+  height: 39px;
+  background-color: rgb(35, 47, 62);
+  gap: 0px;
+  color: white;
+  font-size: 14px;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-left: -2px;
+}
+
+.menu-1, .menu-2, .menu-3, .menu-4, .menu-5, .menu-6, .menu-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  border: none;
+}
+
+.menu-1:hover,
+.menu-2:hover,
+.menu-3:hover,
+.menu-4:hover,
+.menu-5:hover,
+.menu-6:hover,
+.menu-7:hover {
+  box-shadow: inset 0 0 0 1px white;
+  background-color: rgba(255,255,255,0.08); 
+}
+
+.menu-1 i {
+  margin-right: 3px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+
+
+.hero-section {
+  background-image: url(https://m.media-amazon.com/images/I/61BKVkj5+uL._SX3000_.jpg);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+  background-repeat: repeat-x; 
+  animation: moveLeft 30s linear infinite;
+}
+
+@keyframes moveLeft {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2000px 0; 
+  }
+}
+
+.banner-message {
+  position: absolute;
+  top: 70%; 
+  left: 1.5%; 
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 97%;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.banner-message a {
+  color: #0073e6;
+}
+
+.banner-message a:hover {
+  text-decoration: underline;
+}
+
+.shop-container {
+    position: absolute;
+    top: 79%;
+    left: 1.5%;
+    width: 97%;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(306px, 1fr));
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.shop-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 306px;
+    padding: 23px 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shop-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 28px;
+    column-gap: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.category-box img {
+    width: 100%;
+    height: 102px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.category-box p {
+    font-size: 12px;
+}
+
+.title p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 13px;
+    color: #0073e6;
+    margin-top: 45px;
+}
+
+.hero-section {
+  height: 900px;
+}
+
+**/
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img class="amazon-logo"
+                    src="https://freelogopng.com/images/all_img/1688364164amazon-logo-transparent.png"
+                    alt="Amazon Logo">
+                <div class="delivery">
+                    <p class="delivery-line1">Deliver to</p>
+                    <p class="delivery-line2"><i class="fa-solid fa-location-dot"></i>India</p>
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="border-selector"><select class="selector">
+                        <option selected>All</option>
+                    </select></div>
+                <input type="text" class="search-bar" placeholder="Shubham Yadav">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="nav-right">
+                <div class="flag-icon"><img class="flag-image"
+                        src="https://tse1.mm.bing.net/th/id/OIP.DN6Fzoxr59LJMgG2uZxQyAAAAA?w=293&h=172&rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <select class="lang">
+                        <option>EN</option>
+                    </select>
+                </div>
+                <div class="account-info">
+                    <p class="account-line1">Hello, Sign in</p>
+                    <p class="account-line2">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="orders-info">
+                    <p class="orders-line1">Returns</p>
+                    <p class="orders-line2">& Orders</p>
+                </div>
+                <div class="cart-info">
+                    <span class="cart-image"><i class="fa-solid fa-cart-shopping cart-icon"></i></span>
+                    <p class="cart-line2">Cart</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-shop">
+            <div class="menu-1">
+                <i class="fa-solid fa-bars"></i>
+                <p class="all-bar">All</p>
+            </div>
+            <div class="menu-2">
+                <p class="menu-2-bar">Today's Deals</p>
+            </div>
+            <div class="menu-3">
+                <p class="menu-3-bar">Prime Video</p>
+            </div>
+            <div class="menu-4">
+                <p class="menu-4-bar">Registry</p>
+            </div>
+            <div class="menu-5">
+                <p class="menu-5-bar">Gift Cards</p>
+            </div>
+            <div class="menu-6">
+                <p class="menu-6-bar">Customer Service</p>
+            </div>
+            <div class="menu-7">
+                <p class="menu-7-bar">Sell</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="banner-message">
+    You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. 
+    <a href="#">Click here to go to amazon.in</a>
+        </div>
+        <div class="shop-container">
+            <div class="shop-card">
+                <div class="title"><p>Shop for your home</p></div>
+                <div class="shop-item">
+                    <div class="category-box">
+                        <img src="https://kittenbot.io/20240110.png" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://kittenbot.io/20240110.png" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://kittenbot.io/20240110.png" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://kittenbot.io/20240110.png" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <div class="info"><a>Discover more in home</a></div>
+            </div>
+
+            <div class="shop-card">
+                <div class="title"><p>Get your game on</p></div>
+                <div class="shop-item">
+                    <div class="category-box">
+                        <img src="https://wallpapercave.com/wp/wp2618917.jpg" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://wallpapercave.com/wp/wp2618917.jpg" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://wallpapercave.com/wp/wp2618917.jpg" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://wallpapercave.com/wp/wp2618917.jpg" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <div class="info"><a>Discover more in home</a></div>
+            </div>
+
+            <div class="shop-card">
+                <div class="title"><p>New arrivals under $50</p></div>
+                <div class="shop-item">
+                    <div class="category-box">
+                        <img src="https://img.freepik.com/premium-photo/cute-little-kitten_1003030-2093.jpg" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://img.freepik.com/premium-photo/cute-little-kitten_1003030-2093.jpg" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://img.freepik.com/premium-photo/cute-little-kitten_1003030-2093.jpg" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://img.freepik.com/premium-photo/cute-little-kitten_1003030-2093.jpg" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <div class="info"><a>Discover more in home</a></div>
+            </div>
+
+            <div class="shop-card">
+                <div class="title"><p>Shop Fashion for less</p></div>
+                <div class="shop-item">
+                    <div class="category-box">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Beautiful-creative-cute-cat-kitty-kitten-with-flowers-hd-photos-desktop.jpg" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Beautiful-creative-cute-cat-kitty-kitten-with-flowers-hd-photos-desktop.jpg" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Beautiful-creative-cute-cat-kitty-kitten-with-flowers-hd-photos-desktop.jpg" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div class="category-box">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Beautiful-creative-cute-cat-kitty-kitten-with-flowers-hd-photos-desktop.jpg" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <div class="info"><a>Discover more in home</a></div>
+            </div>
+        </div>
+    </div>
+</html>
